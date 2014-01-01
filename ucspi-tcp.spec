@@ -1,20 +1,22 @@
-Name:		ucspi-tcp
-Summary:	tcpserver and tcpclient for building TCP client-server apps
-Version:	0.88
-Release:	0%{?dist}
-License:	Public Domain
-Group:		System/Servers
-URL:		http://cr.yp.to/ucspi-tcp.html
-Source:		http://cr.yp.to/ucspi-tcp/%{name}-%{version}.tar.gz
-Source1:	http://smarden.org/pape/djb/manpages/%{name}-%{version}-man.tar.gz
-Patch0:		ucspi-tcp-04182004.patch
-Patch1:		ucspi-tcp-rbltimeout.patch
-Patch2:		ucspi-tcp-limits.patch
-BuildRequires:	zlib-devel >= 1.2.1
-Requires:	zlib >= 1.2.1
-Obsoletes:	ucspi-tcp-toaster
-Obsoletes:	ucspi-tcp-toaster-doc
-BuildRoot:      %{_topdir}/BUILDROOT/%{name}-%{version}-%{release}.%{_arch}
+Name:      ucspi-tcp
+Summary:   tcpserver and tcpclient for building TCP client-server apps
+Version:   0.88
+Release:   0%{?dist}
+License:   Public Domain
+Group:     System/Servers
+Vendor:    QmailToaster
+Packager:  Eric Shubert <qmt-build@datamatters.us>
+URL:       http://cr.yp.to/ucspi-tcp.html
+Source:    http://cr.yp.to/ucspi-tcp/%{name}-%{version}.tar.gz
+Source1:   http://smarden.org/pape/djb/manpages/%{name}-%{version}-man.tar.gz
+Patch0:    ucspi-tcp-04182004.patch
+Patch1:    ucspi-tcp-rbltimeout.patch
+Patch2:    ucspi-tcp-limits.patch
+BuildRequires: zlib-devel >= 1.2.1
+Requires:  zlib >= 1.2.1
+Obsoletes: ucspi-tcp-toaster
+Obsoletes: ucspi-tcp-toaster-doc
+BuildRoot: %{_topdir}/BUILDROOT/%{name}-%{version}-%{release}.%{_arch}
 
 %define debug_package %{nil}
 
